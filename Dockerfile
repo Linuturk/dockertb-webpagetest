@@ -17,4 +17,4 @@ RUN locale-gen en_US.UTF-8
 RUN apt-get install -y software-properties-common python-software-properties
 RUN add-apt-repository -y ppa:jon-severinsson/ffmpeg
 RUN apt-get update
-RUN apt-get install -y apache2 php5 imagemagick libimage-exiftool-perl libjpeg-turbo-progs ffmpeg php5-curl php5-gd php5-sqlite
+RUN apt-get install -y apache2 php5 imagemagick libimage-exiftool-perl libjpeg-turbo-progs ffmpeg php5-curl php5-gd php5-sqlite php5-apcu
