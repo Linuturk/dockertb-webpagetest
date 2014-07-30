@@ -14,3 +14,6 @@ RUN apt-get -y upgrade
 RUN locale-gen en_US.UTF-8
 
 # Web Page Test Tasks go here
+RUN add-apt-repository -y ppa:jon-severinsson/ffmpeg
+RUN apt-get update
+RUN apt-get install -y apache2 php5 imagemagick libimage-exiftool-perl libjpeg-turbo-progs ffmpeg
